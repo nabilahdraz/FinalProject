@@ -1,0 +1,44 @@
+<div id="outPopUp" class="container mt-5">
+  <div class="container mt-5">
+
+      <!--to show error alert-->
+      <div *ngIf="errormsg" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>{{errormsg}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+        <!--to show success alert-->
+        <div *ngIf="successmsg" class="alert alert-success alert-dismissible fade show" role="alert">
+          <strong>{{successmsg}}</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+      <form  [formGroup]="orderForm" >
+        <h2> Update New Order</h2>
+        <div class="col-lg-6 mt-2" >
+          <input type="text" class="form-control" formControlName="customerName" placeholder="Enter Name">
+        </div>
+
+        <div class="col-lg-6 mt-2">
+          <input type="text" class="form-control" formControlName="orderCakeName" placeholder="Enter Cake Name">
+        </div>
+
+        <div class="col-lg-6 mt-2">
+          <input type="text" class="form-control"  formControlName="orderDate" placeholder="Enter Order Date">
+        </div>
+
+        <div class="col-lg-6 mt-2">
+          <input type="text" class="form-control"  formControlName="finishDate" placeholder="Enter Finish Date">
+        </div>
+
+        <div class="col-lg-6 mt-2">
+          <input type="text" class="form-control"  formControlName="total" placeholder="Enter total">
+        </div>
+
+              <div class="col-lg-4 mt-2" *ngIf="!getparamid" (click)="orderUpdate()">
+                <button class="btn btn-dark btn-sm">Update</button>
+                    </div>
+            </form>
+
+          </div>
+

@@ -1,0 +1,35 @@
+
+           <body>
+            <div class="container-fluid ps-md-0">
+                <div class="row g-0">
+                  <div class="col-md-8 col-lg-6">
+                    <div class="login d-flex align-items-center py-5">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-9 col-lg-8 mx-auto">
+                            <div class="card">
+                            <h3 class="text-center">LOGIN</h3>
+
+                            <!-- Sign In Form -->
+                            <form [formGroup]="loginForm" >
+                              <div class="form-floating mb-3">
+                                <label for="exampleInputEmail1" class="fw-bold mb-2" style="color: rgb(78, 78, 78);">Email address</label>
+                                <br><br>
+                                <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)] = "email">
+                              </div>
+                              <div class="form-floating mb-3">
+                                <label for="exampleInputPassword1" class="fw-bold mb-2" style="color: rgb(78, 78, 78);" >Password</label>
+                                <br><br>
+                                <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1" [(ngModel)] = "password">
+                              </div>
+                              <button type="submit" class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" (click)="login()">Login</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+          </body>

@@ -1,0 +1,66 @@
+.home img
+{
+    width: 100%;
+    height: 540px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.homecontent
+{
+        position: absolute;
+        top: 35%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+}
+.homecontent2
+{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+
+}
+
+.homecontent h1
+{
+    font-size: 35px;
+    color:rgb(250, 250, 250);
+    font-family: cursive;
+}
+.homecontent a
+{
+    margin-top: 10px;
+
+}
+
+.homecontent p
+{
+  font-size: 20px;
+  color:rgb(250, 250, 250);
+  font-family: cursive;
+  text-align: center
+}
+
+    div.desc {
+      padding: 5px;
+      text-align: center;
+    }
+
+
+    div.gallery {
+      margin-left: 20px;
+      margin: 55px;
+
+      float: left;
+      width: 255px;
+
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+
+

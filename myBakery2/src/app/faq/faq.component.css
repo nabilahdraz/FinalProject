@@ -1,0 +1,25 @@
+
+.faqs{
+  padding: 0px 20px 20px;
+}
+
+::-webkit-details-marker{
+  float: right;
+  margin-top: 3px;
+}
+
+details{
+  background: #f1c565;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: black;
+}
+
+details summary{
+  outline: none;
+}
